@@ -228,7 +228,7 @@
         <span class='title'>{{#if organization}}{{organization}}{{/if}}{{#if position}}, {{position}}{{/if}}</span>
         {{#if startDate}}
         <span class='date'>
-          {{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
+          {{#if startDate}}{{smallDate startDate}}{{/if}} &mdash; {{#if endDate}}{{smallDate endDate}}{{else}}Present{{/if}}
         </span>
         {{/if}}
         {{#if website}}
