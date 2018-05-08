@@ -16,6 +16,12 @@ Handlebars.registerHelper("smallDate", function (datetime) {
   return months[date.getMonth()] + " " + date.getFullYear();
 });
 
+Handlebars.registerHelper("smallDateVolunteering", function (datetime) {
+  var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+  var date = new Date(datetime);
+  return months[date.getMonth()+1] + " " + date.getFullYear();
+});
+
 function validateArray(arr) {
   return arr !== undefined && arr !== null && arr instanceof Array && arr.length > 0;
 }
